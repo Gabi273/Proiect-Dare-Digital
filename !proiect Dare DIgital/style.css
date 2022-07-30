@@ -86,6 +86,7 @@ body{
     
     header{
         padding-top: 50px;
+        padding-bottom: 100px;
     }
 
     /*HERO*/
@@ -153,6 +154,8 @@ body{
     .cum-funtioneaza-title p{
         font-size: 24px;
     }
+
+    
         
     /*CAMPANIE*/
 
@@ -1114,6 +1117,7 @@ h2{
 }
 
 
+
 /*FOOTER*/
 
 .br{
@@ -1250,10 +1254,11 @@ h2{
     }
 
     .header-color{
-        background-image: url("image 31.png");
-        background-repeat: no-repeat;
+        background-image: url("/imagini/image 31.jpg");
+        background-position: center;
         background-size: cover;
-        background-color: #F25189;
+        background-repeat: no-repeat;
+        width: 100%;
     }
 
     .hero-text-span{
@@ -1348,16 +1353,16 @@ h2{
     }
     
     .cum-functioneaza-color{
-        background-image: url("image 32.png");
-        background-position: center center;
+        background-image: url("/imagini/image 32.jpg") ;
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        background-color: #F25189;
-        padding: 100px 0;
+        padding: 230px 0;
     }
     
     .cum-functioneaza-color h2{
         color: #fff;
+        margin-top: -75px;
     }
     
     .cum-functioneaza-photo-text{
