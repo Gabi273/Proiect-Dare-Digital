@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DM+Serif+Display&family=Glory&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -15,7 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <meta name="description" content="">
     <title>Document</title>
 </head>
@@ -41,6 +45,7 @@
                     <a href="" alt="link to app store page">
                         <button class="descarca-navbar">Descarca aplicatia
                         </button>
+                        
                     </a>
                  </ul>
                  
@@ -56,14 +61,7 @@
 
     </div>
 
-    <div class="arrows">
-        <a href="/concursuri.html" alt = "link to concursuri page">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <a href="/concursuri.html"  alt = "link to concursuri page">
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
+
 
     <!--HERO-->
     
@@ -79,9 +77,12 @@
                     </br>
                     <span class="hero-text-span"> Acum ai Wishmo!</span> 
                     </p>
+                   <a href="" class="container-link">
                     <div class="hero-link-container">
-                        <a href="" class="hero-link fs-18" alt="link to app store">Descarca aplicatia</a>
+                        <a href="" class="hero-link fs-18" alt="link to app store">Descarca aplicatia </a>
+                        <i class="fa-brands fa-apple apple"></i>
                     </div>
+                   </a>
                 </div>
         
                 <div class="photo-hero">
@@ -157,7 +158,9 @@
     
         <!--VIDEO-->
     
-        <div class="video container-1"></div>
+        <div class="video container-1">
+            <img src="/imagini/Group 1.png" alt="">
+        </div>
     
     
         <!--DE CE-->
@@ -271,7 +274,7 @@
        <!--CUM FUNCTIONEAZA-->
 
        <div class="cum-functioneaza-color">
-
+<div class="color-pink">
           <div class="container-1">
              
             <div class="cum-funtioneaza-title">
@@ -338,15 +341,15 @@
             </div>
             <div class="cum-functioneaza-photo-text">
 
-                <div class="cum-functioneaza-photo">
+            <div class="cum-functioneaza-photo">
                     <img src="/imagini/castigi-img-min.png" alt="You win! a image with a trophie">
-                </div>
+            </div>
 
-                <div class="cum-functioneaza-text">
+            <div class="cum-functioneaza-text">
                     <p>Ești gata să câștigi! 
                         Wishmo te anunță când sunt extragerile și dacă ai câștigat. 
                         </p>
-                </div>
+            </div>
             </div>
 
            </div>
@@ -428,7 +431,7 @@
         
 
           </div>
-
+</div>
        </div>
 
        <!-- CAMPANII -->
@@ -439,7 +442,7 @@
             <h2 id="campanii" >Campanii</h2>
             <p class="fs-17">Loc de text descriptiv daca  nevoie</p>
            </div>
-
+        
         <div class="container-campanii owl-carousel owl-theme">
 
             <div class="campanie">
@@ -538,12 +541,32 @@
                 </div>
             </div>
 
-            <div class="buttons">
-                <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-                <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="campanie">
+                <div class="campanie-photo">
+                    <img src="/imagini/amigo-img-min.png" alt="amigo offer">
+                </div>
+                <div class="campanie-text-1">
+                    <div class="campanie-text-logo">
+                        <div class="campanie-text">
+                            <p class="fs-20 p-1">Amigo</p>
+                            <p class="fs-14 p-2">05 Apr - 31 Sep 2021</p>
+                        </div>
+                        <div class="campanie-logo">
+                            <img src="/imagini/amigo-logo-min.png" alt="amigo logo">
+                        </div>
+                    </div>
+                    <p class="fs-16">Premii, nu vorbe,castiga un Ford <br> Puma</p>
+                   <a href="/concursuri.html" alt="link to competition page">
+                    <div class="afla">
+                        <a href="/concursuri.html" class="fs-16" alt="link to competition page">Afla mai multe</a>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                   </a>
+                </div>
             </div>
 
         </div>
+
         
        </div>
 
@@ -596,27 +619,27 @@
     
                 <div class="social-media">
     
-                    <div class="img-1-fb">
+                    <div class="img-1-fb" >
                         <a href="" alt="facebook link">
-                            <img src="/imagini/facebook-min.png" alt="facebook image">
+                            <img src="/imagini/facebook-app-symbol.png" alt="facebook image" class="bg-social" >
                         </a>
                     </div>
     
-                    <div class="img-2-tw">
+                    <div class="img-2-tw" >
                         <a href="" alt="twitter link">
-                            <img src="/imagini/twitter-min.png" alt="twitter image">
+                            <img src="/imagini/twitter.png" alt="twitter image" class="bg-social">
                         </a>
                     </div>
     
-                    <div class="img-3-ig">
+                    <div class="img-3-ig" >
                         <a href="" alt="instagram link">
-                            <img src="/imagini/instagram-min.png" alt="instagram image">
+                            <img src="/imagini/instagram.png" alt="instagram image" class="bg-social">
                         </a>
                     </div>
     
-                    <div class="img-4-yt">
-                       <a href="" alt="youtube link">
-                        <img src="/imagini/youtube.jpg" alt="youtube image">
+                    <div class="img-4-yt" >
+                       <a href="" alt="youtube link" >
+                        <img src="/imagini/youtube1.png" alt="youtube image" class="bg-social">
                        </a>
                     </div>
                 </div>
@@ -627,9 +650,11 @@
 
     </footer>
 
-    
-    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/owl.carousel.js"></script>
-    <script src="/owl.carousel.min.js"></script>
+    <script src="/owl.carousel.min.js"></script>    
+    <script src="script.js"></script>
+
 </body>
 </html>

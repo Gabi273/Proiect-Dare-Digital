@@ -21,7 +21,13 @@ function initOwl(){
             600:{
                 items:2
             },
+            900:{
+                items:3
+            },
             1000:{
+                items:3
+            },
+            1100:{
                 items:4
             }
         }
