@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=DM+Serif+Display&family=Glory&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- HEADER -->
+
+
+    <div class="navbar-color">
+
+        <nav class="navbar container-1 flex-1">
+            <div class="logo-container">
+                <a href="/index.html" class="logo" alt="Home page">
+                    <img src="/imagini/logo-min.png" alt="logo image">
+                </a>
+            </div>
+    
+            <div class="navbar-links">
+                 <ul class="navbar-ul">
+                    <li><a href="#ce-este" alt="ce este section">Ce este WishMo</a></li>
+                    <li><a href="#de-ce" alt="de ce section">De ce WishMo</a></li>
+                    <li><a href="#cum-functioneaza" alt="cum functioneaza section">Cum functioneaza WishMo </a></li>
+                    <li><a href="#campanii" alt="campanii section">Campanii</a></li>
+                    <a href="" alt="link to app store page">
+                        <button class="descarca-navbar">Descarca aplicatia
+                        </button>
+                        
+                    </a>
+                 </ul>
+                 
+            </div>
+            
+            <div class="hamburger-1">
+                <button class="hamburger">
+                    <img src="/imagini/menu-min.png" alt="menu button">
+                </button>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <!--HERO-->
+    
+    <div class="header-color-1">
+
+        <header class="container-1 header">
+
+            <div class="photo-text-hero">
+    
+                <div class="text-hero-concursuri">
+                    <h1 class="fs-43">Adauga o campanie</h1>
+                    <p class="fs-28">Până acum, să câștigi nu era treabă ușoară <br><span class="hero-text-span">Acum ai Wishmo!</span>
+                    </p>
+                </div>
+            </div>
+    
+        </header>
+
+    </div>
+
+
+
+    <!-- MAIN -->
+
+    <main class="container-3">
+
+        <div class="navigatie-adaugare-campanii">
+            <button class="button-navigare button-navigare-border-radius-1" id="button-section-1"></button>
+            <button class="button-navigare" id="button-section-2"></button>
+            <button class="button-navigare" id="button-section-3"></button>
+            <button class="button-navigare button-navigare-border-radius" id="button-section-4"></button>
+        </div>
+
+        <div class="section-1 display-none">
+            <p class="titlu">Detalii concurs</p>
+
+        <p class="titlu-input">Brand</p>
+        <select name="" id="Branduri" class="adauga-campanii-select">
+            <option value="">Alege brand</option>
+            <option value="">Alege brand</option>
+            <option value="">Alege brand</option>
+            <option value="">Alege brand</option>
+            <option value="">Alege brand</option>
+        </select>
+
+        <p class="titlu-input">Nume campanie</p>
+
+        <input type="text" placeholder="Nume campanie pana in 40 caractere si cu">
+
+        <button class="butoane-adaugare-campanii">+ Adauga brand</button>
+
+        <p class="titlu-input">Categorii</p>
+        <select name="" id="Branduri" class="adauga-campanii-select">
+            <option value="">Alege categorii</option>
+            <option value="">Alege categorii</option>
+            <option value="">Alege categorii</option>
+            <option value="">Alege categorii</option>
+            <option value="">Alege categorii</option>
+        </select>
+
+        <button class="butoane-adaugare-campanii">+ Adauga Categorie</button>
+
+        <div class="kv">
+
+            <div class="kv-square">
+                <p class="titlu-input">KV square</p>
+
+                <div id="dragger wrapper" >
+                    <div id="dragger" class="dragger-1">
+                        <p>120px x 120px @3x</p>
+                        <input type="file" hidden id="fileSelectorInput">
+                    </div>
+                    <div id="filename"></div>
+                </div>
+            </div>
+
+
+            <div class="kv-landscape">
+
+                <p class="titlu-input">KV landscape</p>
+
+                <div id="dragger wrapper" >
+                    <div id="dragger" class="dragger">
+                        <p>375px x 282px @3x</p>
+                        <input type="file" hidden id="fileSelectorInput">
+                    </div>
+                    <div id="filename"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="titlu-input">Data inceput</p>
+
+        <input type="datetime-local" name="" id="">
+        
+        <p class="titlu-input">Data sfarsit</p>
+
+        <input type="datetime-local" name="" id="">
+
+        <p class="titlu-input">Link regulament</p>
+
+        <input type="text" placeholder="https://">
+
+        <p class="titlu-input">Descriere scurta</p>
+
+        <textarea name="" id="" cols="30" rows="7"></textarea>
+
+        <p class="text-aditional">Minim 10 cuvinte - maxim 25 cuvinte</p>
+
+        <p class="titlu-input" >Descriere lunga</p>
+
+        <textarea name="" id="" cols="30" rows="15"></textarea>
+
+        <p class="text-aditional">Minim 200 cuvinte - maxim 1000 cuvinte</p>
+
+        <button class="butoane-adaugare-campanii">Pasul urmator </button>
+
+        </div>
+
+        
+
+        <div class="section-2 display-none">
+            <p class="titlu">Detalii premii</p>
+
+            <p class="titlu-input">Frecventa premii</p>
+
+            <div class="container-text-checkbox">
+            <div class="text-checkbox">
+                <input type="checkbox" name="Zilnica" id="">
+                <p>Zilnica</p>
+            </div>
+        
+            <div class="text-checkbox">
+                <input type="checkbox" name="Zilnica" id="">
+                <p>Saptamanal</p>
+            </div>
+        
+            <div class="text-checkbox">
+                <input type="checkbox" name="Zilnica" id="">
+                <p>Lunara</p>
+            </div>
+        
+            <div class="text-checkbox">
+                <input type="checkbox" name="Zilnica" id="">
+                <p>One time</p>
+            </div>
+            
+            </div>
+
+            <p class="text-aditional">Poti selecta frecvente multiple</p>
+
+        <p class="titlu-input">Valoarea premiilor</p>
+
+        <input type="text" placeholder="Valoarea totala a premiilor">
+        
+        <p class="titlu-input">Numarul premiilor</p>
+
+        <input type="text" placeholder="Numarul total al premiilor">
+        
+        <p class="titlu-input" >Lista premiilor</p>
+
+        <input type="text" placeholder="Lista premiilor">
+
+        <p class="text-aditional">Separator ENTER</p>
+
+        <button class="butoane-adaugare-campanii">Pasul urmator</button>
+        </div>
+        </div>
+
+        <div class="section-3 display-none">
+
+            <p class="titlu">Detalii inscriere</p>
+
+            <p class="titlu-input">Link extern campanie</p>
+    
+            <input type="text" placeholder="https://">
+    
+            <p class="titlu-input">Numar sms</p>
+    
+            <input type="text" placeholder="Numar sms">
+    
+            <p class="titlu-input">Text info SMS</p>
+    
+            <input type="text" placeholder="Text info sms">
+    
+            <p class="titlu-input" >Link castigatori</p>
+    
+            <input type="text" placeholder="https://">
+    
+            <button class="butoane-adaugare-campanii">Pasul urmator </button>
+            
+
+        </div>
+
+        <div class="section-4 display-none">
+           
+
+        <p class="titlu">Alte detalii</p>
+
+        <p class="titlu-input">produse participante</p>
+
+        <select name="" id="Branduri" class="adauga-campanii-select">
+            <option value="">Produse</option>
+            <option value="">Produse</option>
+            <option value="">Produse</option>
+            <option value="">Produse</option>
+            <option value="">Produse</option>
+        </select>
+
+        <button class="butoane-adaugare-campanii">+ Adauga Produs</button>
+
+       <div class="campanie-nationala">
+        <input type="radio" name="" id="" value="Campanie nationala">
+
+        <p>Campanie nationala</p>
+       </div>
+
+        <p class="titlu-input">Judet</p>
+
+        <select name="" id="" class="adauga-campanii-select">
+            <option value="Alege judet">Alege judet</option>
+            <option value="Alege judet">Alege judet</option>
+            <option value="Alege judet">Alege judet</option>
+            <option value="Alege judet">Alege judet</option>
+        </select>
+
+        <p class="titlu-input">Localitate</p>
+
+        <select name="" id="" class="adauga-campanii-select">
+            <option value="Alege localitate">Alege localitate</option>
+            <option value="Alege localitate">Alege localitate</option>
+            <option value="Alege localitate">Alege localitate</option>
+            <option value="Alege localitate">Alege localitate</option>
+        </select>
+
+        <p>Detalii reprezentant</p>
+
+        <p class="titlu-input">Nume reprezentant</p>
+
+        <input type="text" placeholder="Nume si prenume">
+
+        <p class="titlu-input">Telefon reprezentant</p>
+
+        <input type="text" placeholder="Numar telefon">
+        
+        <p class="titlu-input">Email reprezentant</p>
+
+        <input type="text" placeholder="Adresa de email">
+
+        <div class="regulamentul">
+            <input type="radio" name="" id="">
+            <p class="regulament">Sunt de acord cu <a href="" class="regulament-campanie">Regulametul campaniei</a></p>
+        </div>
+
+        <button class="butoane-adaugare-campanii last-button">Adauga concurs</button>
+
+        </div>
+
+    </main>
+
+     <!-- FOOTER -->
+
+     <footer>
+
+        <div class="footer-privacy-color">
+
+            <div class="footer-social-privacy container-1">
+
+                <p class="drepturi">
+                    ©2022 WishMo  |  Toate drepturile rezervate
+                </p>
+    
+                <p class="conditii">
+                    Termeni si conditii   |   Politica cookies
+                </p>
+    
+                <div class="social-media">
+    
+                    <div class="img-1-fb" >
+                        <a href="" alt="facebook link">
+                            <img src="/imagini/facebook-app-symbol.png" alt="facebook image" class="bg-social" >
+                        </a>
+                    </div>
+    
+                    <div class="img-2-tw" >
+                        <a href="" alt="twitter link">
+                            <img src="/imagini/twitter.png" alt="twitter image" class="bg-social">
+                        </a>
+                    </div>
+    
+                    <div class="img-3-ig" >
+                        <a href="" alt="instagram link">
+                            <img src="/imagini/instagram.png" alt="instagram image" class="bg-social">
+                        </a>
+                    </div>
+    
+                    <div class="img-4-yt" >
+                       <a href="" alt="youtube link" >
+                        <img src="/imagini/youtube1.png" alt="youtube image" class="bg-social">
+                       </a>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
