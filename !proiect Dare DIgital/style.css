@@ -1682,6 +1682,7 @@ h2{
 }
 
 .filtre{
+    align-items: center;
     display: flex;
     gap: 20px;
 }
@@ -1701,6 +1702,28 @@ select{
 }
 
 /*CAMPANII*/
+
+.span-poza-nou{
+    position: absolute;
+    background-color: #3861E9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: var(--glory);
+}
+
+.span-poza-expirare{
+    position: absolute;
+    background-color: #E93876;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--glory);
+}
 
 .header-color-1{
     background-image: url("/imagini/image\ 31.png");
@@ -1774,7 +1797,7 @@ select{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .icons-campanii-concursuri{
@@ -1794,33 +1817,22 @@ select{
     margin-top: 50px;
 }
 
-#dragger p{
-    color: #000;
-}
 
-.dragger, .dragger-1{
-    max-width: 315px;
-    height: 237px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.dragger-1{
-    max-width: 175px;
-    height: 175px;
-    width: 100%;
-}
+@media(max-width:1184px){
 
-#dragger img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    .campanii-concursuri-text{
+        gap: 30px;
+    }
+
+    .span-poza-nou{
+        font-size: 14px;
+    }
+
+    .span-poza-expirare{
+        font-size: 12px;
+    }
+    
 }
 
 
@@ -1828,6 +1840,10 @@ select{
 
     .header-color-1{
         height: 350px;
+    }
+
+    .text-hero-concursuri p{
+        font-size: 27px;
     }
     
 }
@@ -1837,6 +1853,8 @@ select{
         height: 150px;
         width: 150px;
     }
+
+    
     
 }
 
@@ -1856,9 +1874,13 @@ select{
         gap: 30px;
     }
 
+    
+
 }
 
 @media(max-width:768px){
+
+    
     
     .filtere-concursuri{
         display: none;
@@ -1896,6 +1918,10 @@ select{
         font-size: 18px;
     }
 
+    .campanii-concursuri-text-1 p:last-child,.campanii-concursuri-text-2 p{
+        font-size: 14px;
+    }
+
     
 }
 
@@ -1925,6 +1951,7 @@ select{
     .text-hero-concursuri p{
         font-size: 24px;
     }
+    
 
     .hero-link-container-1{
         display: flex;
@@ -1939,10 +1966,6 @@ select{
         height: 144px;
     }
 
-    .campanii-concursuri-text-1 p:last-child,.campanii-concursuri-text-2 p{
-        font-size: 14px;
-    }
-
     .campanii-concursuri-photo img{
         width: 120px;
         height: 120px;
@@ -1951,20 +1974,82 @@ select{
     .campanii-concursuri-text{
         gap: 20px;
     }
-    
+
+    .campanii-concursuri-text-2 p:last-child{
+        display: none;
+    }
+
 }
 
         /*CAMPANIE*/
+
+        
+.dragger, .dragger-1{
+    max-width: 315px;
+    height: 237px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+        
+.dragger-1{
+    max-width: 175px;
+    height: 175px;
+    width: 100%;
+}
+        
+#dragger{
+    object-fit: cover;
+    border-radius: 10px;
+}
+        
+.kv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+        
+.kv-photo img{
+    width: 34px;
+}
+        
+.kv-photo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
 
 
 input, textarea{
     max-width: 780px;
     width: 100%;
-    margin-top: 20px;
+    border-radius: 4px;
 }
 
 textarea{
     border: 1px solid #D0DBE0;
+}
+
+input, textarea, select, .text-checkbox, .campanie-nationala{
+    margin-top: 6px;
+}
+
+.dragger-1 input{
+    border-radius: 10px;
+}
+
+.text-checkbox, select, .campanie-nationala{
+    border-radius: 4px;
+}
+
+#Branduri, .data, .adauga-campanii-select{
+    padding-left: 15px;
 }
 
 
@@ -1973,11 +2058,30 @@ input, .adauga-campanii-select{
     height: 46px;
 }
 
-input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
-    padding-left: 10px;
+
+input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p, textarea::placeholder, .data{
+    padding-left: 15px;
     font-size: 16px;
     color:#8890A6;
     font-family: var(--glory);
+}
+
+.kv-text p{
+    font-size: 16px;
+    font-family: var(--glory);
+    color: #515C6F;
+}
+
+.textarea-1{
+    height: 92px;
+}
+
+.textarea-2{
+    height: 154px;
+}
+
+textarea::placeholder{
+    padding-top: 10px;
 }
 
 .titlu-input{
@@ -1985,15 +2089,15 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
     font-weight: bold;
     font-family: var(--glory);
     color: #38454C;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .titlu{
     font-size: 24px;
     font-family: var(--glory);
     color: #E93876;
-    font-weight: 600;
-    margin-top: 20px;
+    font-weight: 400;
+    margin-top: 54px;
 }
 
 .butoane-adaugare-campanii{
@@ -2004,18 +2108,22 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
     background-color: #E93876;
     border: none;
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     font-size: 16px;
     font-weight: 600;
     font-family: var(--glory);
     cursor: pointer;
+    border-radius: 6px;
+}
+
+.pasul-urmator{
+    margin-top: 50px;
 }
 
 .adauga-campanii-select{
     max-width: 780px;
     width: 100%;
-    background-color: #fff;
-    margin-top: 20px;
+    background-color: #fff; 
 } 
 
 .regulament-campanie{
@@ -2029,28 +2137,29 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
 
 .text-checkbox, .campanie-nationala{
     display: flex;
-    align-items: center;
     max-width: 376px;
     width: 100%;
     height: 46px;
     background-color: #fff;
     border: #D0DBE0 1px solid;
+    align-items: center;
 }
 
 .text-checkbox input, .campanie-nationala input, .regulamentul input{
     height: 22px;
     width: 22px;
     margin-left: 10px;
-    margin-bottom: 22px;
+    margin-bottom: 8px;
     border: none;
+    border-radius: 4px;
 }
 
 .container-text-checkbox{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    gap: 28px;
-    margin-top: 20px;
+    gap: 7px;
+    margin-top: 6px;
 }
 
 .campanie-nationala{
@@ -2069,7 +2178,6 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
     font-size: 14px;
     font-family: var(--glory);
     color: #8890A6;
-    margin-top: 10px;
 }
 
 .button-navigare{
@@ -2101,15 +2209,6 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
     margin: 50px auto;
 }
 
-/* .display-none{
-    display: none;
-}
-
-.section-1.open,.section-2.open,.section-3.open,.section-4.open{
-    display: block;
-} */
-
-
 
 @media(max-width:820px){
     .container-text-checkbox{
@@ -2121,3 +2220,10 @@ input::placeholder, .regulament, .text-checkbox p, .campanie-nationala p{
     }
 
 }
+
+@media(max-width:500px){
+    .kv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

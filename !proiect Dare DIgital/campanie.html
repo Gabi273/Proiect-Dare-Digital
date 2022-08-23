@@ -70,7 +70,7 @@
     
                 <div class="text-hero-concursuri">
                     <h1 class="fs-43">Adauga o campanie</h1>
-                    <p class="fs-28">Până acum, să câștigi nu era treabă ușoară <br><span class="hero-text-span">Acum ai Wishmo!</span>
+                    <p class="fs-28 campanie-hero-text">Până acum, să câștigi nu era treabă ușoară <br><span class="hero-text-span">Acum ai Wishmo!</span>
                     </p>
                 </div>
             </div>
@@ -92,12 +92,12 @@
             <button class="button-navigare button-navigare-border-radius" id="button-section-4"></button>
         </div>
 
-        <div class="section-1 display-none">
+        <div class="section-1">
             <p class="titlu">Detalii concurs</p>
 
         <p class="titlu-input">Brand</p>
         <select name="" id="Branduri" class="adauga-campanii-select">
-            <option value="">Alege brand</option>
+            <option value="" class="option">Alege brand</option>
             <option value="">Alege brand</option>
             <option value="">Alege brand</option>
             <option value="">Alege brand</option>
@@ -128,7 +128,14 @@
 
                 <div id="dragger wrapper" >
                     <div id="dragger" class="dragger-1">
-                        <p>120px x 120px @3x</p>
+                        <div class="kv-photo-text">
+                            <div class="kv-photo">
+                                <img src="/imagini/Group 1370.png" alt="">
+                            </div>
+                           <div class="kv-text">
+                            <p>120px x 120px @3x</p>
+                           </div>
+                        </div>
                         <input type="file" hidden id="fileSelectorInput">
                     </div>
                     <div id="filename"></div>
@@ -142,7 +149,14 @@
 
                 <div id="dragger wrapper" >
                     <div id="dragger" class="dragger">
-                        <p>375px x 282px @3x</p>
+                        <div class="kv-photo-text">
+                            <div class="kv-photo">
+                                <img src="/imagini/Group 1370.png" alt="">
+                            </div>
+                            <div class="kv-text">
+                                <p>375px x 282px @3x</p>
+                            </div>
+                        </div>
                         <input type="file" hidden id="fileSelectorInput">
                     </div>
                     <div id="filename"></div>
@@ -154,11 +168,11 @@
 
         <p class="titlu-input">Data inceput</p>
 
-        <input type="datetime-local" name="" id="">
+        <input type="datetime-local" name="" id="" class="data">
         
         <p class="titlu-input">Data sfarsit</p>
 
-        <input type="datetime-local" name="" id="">
+        <input type="datetime-local" name="" id="" class="data">
 
         <p class="titlu-input">Link regulament</p>
 
@@ -166,23 +180,21 @@
 
         <p class="titlu-input">Descriere scurta</p>
 
-        <textarea name="" id="" cols="30" rows="7"></textarea>
+        <textarea name="" id="" cols="30" rows="7" placeholder="Descriere scurta" class="textarea-1"></textarea>
 
         <p class="text-aditional">Minim 10 cuvinte - maxim 25 cuvinte</p>
 
         <p class="titlu-input" >Descriere lunga</p>
 
-        <textarea name="" id="" cols="30" rows="15"></textarea>
+        <textarea name="" id="" cols="30" rows="15" placeholder="Descriere lunga" class="textarea-2"></textarea>
 
         <p class="text-aditional">Minim 200 cuvinte - maxim 1000 cuvinte</p>
 
-        <button class="butoane-adaugare-campanii">Pasul urmator </button>
+        <button class="butoane-adaugare-campanii pasul-urmator">Pasul urmator </button>
 
         </div>
 
-        
-
-        <div class="section-2 display-none">
+        <div class="section-2">
             <p class="titlu">Detalii premii</p>
 
             <p class="titlu-input">Frecventa premii</p>
@@ -212,25 +224,24 @@
 
             <p class="text-aditional">Poti selecta frecvente multiple</p>
 
-        <p class="titlu-input">Valoarea premiilor</p>
+            <p class="titlu-input">Valoarea premiilor</p>
 
-        <input type="text" placeholder="Valoarea totala a premiilor">
+            <input type="text" placeholder="Valoarea totala a premiilor">
         
-        <p class="titlu-input">Numarul premiilor</p>
+            <p class="titlu-input">Numarul premiilor</p>
 
-        <input type="text" placeholder="Numarul total al premiilor">
+            <input type="text" placeholder="Numarul total al premiilor">
         
-        <p class="titlu-input" >Lista premiilor</p>
+            <p class="titlu-input" >Lista premiilor</p>
 
-        <input type="text" placeholder="Lista premiilor">
+            <input type="text" placeholder="Lista premiilor">
 
-        <p class="text-aditional">Separator ENTER</p>
+            <p class="text-aditional">Separator ENTER</p>
 
-        <button class="butoane-adaugare-campanii">Pasul urmator</button>
+            <button class="butoane-adaugare-campanii pasul-urmator">Pasul urmator</button>
         </div>
-        </div>
-
-        <div class="section-3 display-none">
+        
+        <div class="section-3">
 
             <p class="titlu">Detalii inscriere</p>
 
@@ -250,17 +261,17 @@
     
             <input type="text" placeholder="https://">
     
-            <button class="butoane-adaugare-campanii">Pasul urmator </button>
+            <button class="butoane-adaugare-campanii pasul-urmator">Pasul urmator </button>
             
 
         </div>
 
-        <div class="section-4 display-none">
+        <div class="section-4">
            
 
         <p class="titlu">Alte detalii</p>
 
-        <p class="titlu-input">produse participante</p>
+        <p class="titlu-input">Produse participante</p>
 
         <select name="" id="Branduri" class="adauga-campanii-select">
             <option value="">Produse</option>
